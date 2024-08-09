@@ -1,0 +1,18 @@
+$font-primary: #000000;
+$font-accent: #FF6600;
+$delete-accent: #FF5959;
+
+$button-light: #ffffff;
+$button-dark: #172139;
+
+$bg-accent: #f4f4f4;
+
+$font-primary: "Futura PT", Arial, Helvetica, sans-serif;
+$font-secondary: "Montserrat", Arial, Helvetica, sans-serif;
+$font-form: "Galdeano", Arial, Helvetica, sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
