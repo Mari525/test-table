@@ -4,8 +4,388 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Настройки / Локации</title>
+  <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/settings.css">
 </head>
-<body>
-  
+<body class="body">
+
+  <header class="header">
+    <a href="#" class="header__logo">
+      <img class="header__logo-img" src="./icons/logo.svg" alt="">
+      <p class="header__logo-version">v 2.01</p>
+    </a>
+    <a href="#">
+      <img src="./icons/log-out.svg" alt="">
+    </a>
+  </header>
+
+  <div class="main-wrapper">
+    <div class="wrapper">
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/property.svg" alt="" class="nav__icon">
+              <span class="nav__text">Имущество</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/inventory.svg" alt="" class="nav__icon">
+              Инвентаризация
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/staff.svg" alt="" class="nav__icon">
+              Сотрудники
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/notifications.svg" alt="" class="nav__icon">
+              Уведомления
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">
+              <img src="./icons/locations.svg" alt="" class="nav__icon">
+              Локации
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/settings.svg" alt="" class="nav__icon">
+              Настройки
+            </a>
+          </li>
+        </ul>
+        <button class="nav__btn" type="button">
+          <img src="./icons/arrow-left.svg" alt="">
+          Скрыть меню
+        </button>
+      </nav>
+
+      <main class="main settings">
+        <h1 class="main__heading">Настройки / Локации</h1>
+
+        <section class="btns">
+          <ul class="btns__list">
+            <li class="btns__item">
+              <button class="btn-small btn-small-1" type="button">Имущество</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small btn-small-2" type="button">Инвентаризация</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small btn-small-3" type="button">Сотрудники</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small btn-small--active" type="button">Локации</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small" type="button">Уведомления</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small" type="button">Справочники</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small" type="button">Пользователь</button>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="main__heading">Настройка полей таблицы</h2>
+          <table class="table">
+
+            <thead class="table__thead">
+              <td></td>
+              <td>Описание</td>
+              <td>Сортировка</td>
+              <td>ID</td>
+              <td>Тип поля</td>
+              <td>Выводить в таблицу</td>
+              <td>Обязательно</td>
+              <td>Удалить</td>
+            </thead>
+
+            <tbody>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Название
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td>
+                  <img src="./icons/help-circle.svg" alt="">
+                </td>
+                <td>
+                  <p>500</p>
+                </td>
+                <td>1001</td>
+                <td>Строка</td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch1" id="ch1" checked>
+                  <label for="ch1"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch2" id="ch2" checked>
+                  <label for="ch2"></label>
+                </td>
+                <td></td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Цена
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>510</p>
+                </td>
+                <td>1002</td>
+                <td>Число</td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch3" id="ch3" checked>
+                  <label for="ch3"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch4" id="ch4" checked>
+                  <label for="ch4"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch5" id="ch5" checked>
+                  <label for="ch5"></label>
+                </td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  МОЛ
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>520</p>
+                </td>
+                <td>1003</td>
+                <td>
+                  <p class="table__flex">
+                    Справочник
+                    <img src="./icons/paper.svg" alt="">
+                  </p>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch6" id="ch6" checked>
+                  <label for="ch6"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch7" id="ch7" checked>
+                  <label for="ch7"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch8" id="ch8">
+                  <label for="ch8"></label>
+                </td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Фото
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>530</p>
+                </td>
+                <td>1004</td>
+                <td>Файл</td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch9" id="ch9" checked>
+                  <label for="ch9"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch10" id="ch10" checked>
+                  <label for="ch10"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch11" id="ch11">
+                  <label for="ch11"></label>
+                </td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Цвет
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>540</p>
+                </td>
+                <td>1005</td>
+                <td>Строка</td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch12" id="ch12" checked>
+                  <label for="ch12"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch13" id="ch13" checked>
+                  <label for="ch13"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch14" id="ch14">
+                  <label for="ch14"></label>
+                </td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Локация
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>550</p>
+                </td>
+                <td>1006</td>
+                <td>
+                  <p class="table__flex">
+                    Справочник
+                    <img src="./icons/paper.svg" alt="">
+                  </p>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch15" id="ch16" checked>
+                  <label for="ch16"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch17" id="ch17" checked>
+                  <label for="ch17"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch18" id="ch18">
+                  <label for="ch18"></label>
+                </td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Количество
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>560</p>
+                </td>
+                <td>1007</td>
+                <td>Число</td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch18" id="ch18" checked>
+                  <label for="ch18"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch19" id="ch19" checked>
+                  <label for="ch19"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch20" id="ch20">
+                  <label for="ch20"></label>
+                </td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Описание
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>570</p>
+                </td>
+                <td>1008</td>
+                <td>Текст</td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch21" id="ch21" checked>
+                  <label for="ch21"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch22" id="ch22" checked>
+                  <label for="ch22"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch23" id="ch23">
+                  <label for="ch23"></label>
+                </td>
+              </tr>
+
+              <tr class="table__row">
+                <td class="table__names">
+                  <img src="./icons/three-dots.svg" alt="">
+                  Количество
+                  <img src="./icons/edit.svg" alt="">
+                </td>
+                <td></td>
+                <td>
+                  <p>580</p>
+                </td>
+                <td>1009</td>
+                <td>Число</td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch24" id="ch24" checked>
+                  <label for="ch24"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch25" id="ch25" checked>
+                  <label for="ch25"></label>
+                </td>
+                <td>
+                  <input class="checkbox" type="checkbox" name="ch26" id="ch26">
+                  <label for="ch26"></label>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+          <button class="add-btn btn-large">
+            <img src="./icons/plus.svg" alt="">
+            Добавить поле
+          </button>
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+  <footer class="footer settings__footer">
+    <div class="footer__wrapper">
+      <button class="save-btn btn-large">
+        <img src="./icons/save.svg" alt="">
+        Сохранить
+      </button>
+      <button class="cancel-btn btn-large btn-large--cancel">
+        Отменить
+      </button>
+      <a href="" class="footer__link">
+        <img src="./icons/documentation.svg" alt="">
+        Документация
+      </a>
+    </div>
+  </footer>
+
 </body>
 </html>

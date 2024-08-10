@@ -1,0 +1,77 @@
+.popup {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.popup__hide {
+  display: none;
+}
+.popup__show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup__content {
+  width: 440px;
+  padding: 25px 40px;
+  background-color: #ffffff;
+}
+.popup__heading {
+  margin-bottom: 17px;
+  color: #000000;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.popup input {
+  height: 50px;
+  padding: 0 25px;
+  border-radius: 5px;
+  color: #172139;
+  font-size: 1.6rem;
+  font-family: "Galdeano", Arial, Helvetica, sans-serif;
+  background-color: #F5F5F5;
+  border: 1px solid #E1E1E1;
+}
+.popup input::-moz-placeholder {
+  color: #AEAEAE;
+  font-family: "Galdeano", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+.popup input::placeholder {
+  color: #AEAEAE;
+  font-family: "Galdeano", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+.popup__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.popup__toggle {
+  font-family: "Galdeano", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+.create__create-btn {
+  width: 193px;
+  gap: 10px;
+}
+.create__cancel-btn {
+  width: 151px;
+}
+
+.edit__delete-btn {
+  width: 195px;
+}
+.edit__cancel-btn {
+  width: 151px;
+}
+.edit__save-btn {
+  width: 100%;
+}/*# sourceMappingURL=popup.css.map */

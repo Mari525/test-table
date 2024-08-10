@@ -1,0 +1,146 @@
+$color-primary: #172139;
+$color-accent: #FF6600;
+
+$button-light: #ffffff;
+
+$bg-accent: #f4f4f4;
+
+$font-primary: "Futura PT", Arial, Helvetica, sans-serif;
+$font-secondary: "Montserrat", Arial, Helvetica, sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings {
+  margin-bottom: 150px;
+
+  .btns .btn-small {
+    width: 132px;
+    margin-bottom: 32px;
+
+    &-1 {
+      width: 140px;
+    }
+    &-2 {
+      width: 178px;
+    }
+    &-3 {
+      width: 160px;
+    }
+  }
+
+  &__footer {
+    padding: 15px 30px;
+  }
+
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+
+  font-family: $font-secondary;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.4rem;
+
+  &__thead {
+    td {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__names {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+  }
+
+//   tr:nth-child(2n-1) td:first-child {
+//     border-top-left-radius: 5px;
+//     background-color: $button-light;
+// }
+
+  &__row {
+
+    &:nth-of-type(2n-1) {
+      background-color: $button-light;
+      
+      // & td:first-of-type {
+      //   border-radius: 5px;
+      // }
+    }
+
+    p:nth-of-type(3) {
+      width: 81px;
+      height: 31px;
+      @include flex-center;
+
+      background-color: $button-light;
+      border-radius: 5px;
+      border: 1px solid #EFEFEF;
+    }
+
+    td {
+      height: 60px;
+      padding: 19px 0 24px;
+      vertical-align: middle;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  
+  &+label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 2px;
+      background-color: $button-light;
+      border: 2px solid $color-accent;
+    }
+    
+  }
+
+  &:checked+label::before {
+    background-color: $color-accent;
+    background-image: url(../icons/check-mark.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.add-btn {
+  width: 255px;
+  gap: 10px;
+}
+
+.save-btn {
+  width: 198px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.cancel-btn {
+  width: 194px;
+  margin-right: auto;
+}

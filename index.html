@@ -6,6 +6,7 @@
   <title>Локации</title>
   <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/popup.css">
 </head>
 <body class="body">
 
@@ -19,8 +20,234 @@
     </a>
   </header>
 
-  <main class="main">
-    
-  </main>
+  <div class="main-wrapper">
+    <div class="wrapper">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/property.svg" alt="" class="nav__icon">
+              <span class="nav__text">Имущество</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/inventory.svg" alt="" class="nav__icon">
+              Инвентаризация
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/staff.svg" alt="" class="nav__icon">
+              Сотрудники
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/notifications.svg" alt="" class="nav__icon">
+              Уведомления
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <img src="./icons/locations.svg" alt="" class="nav__icon">
+              Локации
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="./settings.html" class="nav__link">
+              <img src="./icons/settings.svg" alt="" class="nav__icon">
+              Настройки
+            </a>
+          </li>
+        </ul>
+        <button class="nav__btn" type="button">
+          <img src="./icons/arrow-left.svg" alt="">
+          Скрыть меню
+        </button>
+      </nav>
+      <main class="main">
+        <h1 class="main__heading">Локации / Все локации</h1>
+        <section class="btns">
+          <ul class="btns__list">
+            <li class="btns__item">
+              <button class="btn-small btn-small-1 btn-small--active" type="button">Все локации</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small btn-small-2" type="button">Импорт/Экспорт</button>
+            </li>
+            <li class="btns__item">
+              <button class="btn-small btn-small-3" type="button">Настройки</button>
+            </li>
+          </ul>
+          <button class="btn-large" type="button">
+            <img src="./icons/synchronization.svg" alt="">
+            синхронизация&nbsp;
+            <span>(17.05.2024 15:23:21)</span>
+          </button>
+        </section>
+
+        <section class="create-search">
+          <button class="btn-large" id="create-btn">
+            <img src="./icons/plus.svg" alt="">
+            Создать локацию
+          </button>
+          <form class="search" action="#">
+            <input class="search__checkbox" type="checkbox" name="accuracy" id="accuracy" checked>
+            <label class="search__label" for="accuracy">Поиск по точному вхождению</label>
+            <div class="search__wrapper">
+              <input class="search__input" type="text" placeholder="поиск" name="search" id="search">
+            </div>
+          </form>
+        </section>
+
+        <section class="locations">
+          <ul>
+            <li class="location">
+              <button class="location__open">
+                <img src="./icons/minus.svg" alt="">
+              </button>
+              <button><img src="./icons/three-dots.svg" alt=""></button>
+              <h2 class="location__name">Локация 1</h2>
+              <span class="location__num">512</span>
+              <button class="location__edit" id="edit-btn">
+                <img src="./icons/edit.svg" alt="">
+                Редактировать
+              </button>
+              <button class="location__delete">
+                <img src="./icons/delete.svg" alt="">
+                Удалить
+              </button>
+            </li>
+            <ul class="location__list">
+              <li class="location">
+                <button class="location__open">
+                  <img src="./icons/plus.svg" alt="">
+                </button>
+                <button><img src="./icons/three-dots.svg" alt=""></button>
+                <h2 class="location__name">Подотдел 1</h2>
+                <span class="location__num">10</span>
+                <span class="location__note">Для утерь</span>
+              </li>
+              <li class="location">
+                <button class="location__open">
+                  <img src="./icons/minus.svg" alt="">
+                </button>
+                <button><img src="./icons/three-dots.svg" alt=""></button>
+                <h2 class="location__name">Подотдел 2</h2>
+                <span class="location__num">100</span>
+              </li>
+              <ul class="location__sublist">
+                <li class="location">
+                  <button><img src="./icons/three-dots.svg" alt=""></button>
+                  <h2 class="location__name">Подподотдел 1</h2>
+                  <span class="location__num">2</span>
+                  <span class="location__note">Виртуальная</span>
+                  <span class="location__note-bold location__note">Без штрихкода</span>
+                </li>
+              </ul>
+              <li class="location">
+                <button class="location__open">
+                  <img src="./icons/plus.svg" alt="">
+                </button>
+                <button><img src="./icons/three-dots.svg" alt=""></button>
+                <h2 class="location__name">Подотдел 3</h2>
+                <span class="location__num">400</span>
+              </li>
+            </ul>
+            </li>
+            <li class="location">
+              <button class="location__open">
+                <img src="./icons/plus.svg" alt="">
+              </button>
+              <button><img src="./icons/three-dots.svg" alt=""></button>
+              <h2 class="location__name">Локация 2</h2>
+              <span class="location__num">100</span>
+            </li>
+            <li class="location">
+              <button class="location__open">
+                <img src="./icons/plus.svg" alt="">
+              </button>
+              <button><img src="./icons/three-dots.svg" alt=""></button>
+              <h2 class="location__name">Локация 3</h2>
+              <span class="location__num">100</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <p class="footer__text">Последний приём 20.09.2021 18:36:21</p>
+      <p class="footer__text">Последняя передача  20.09.2021 18:38:21</p>
+      <a href="" class="footer__link">
+        <img src="./icons/documentation.svg" alt="">
+        Документация
+      </a>
+    </div>
+  </footer>
+
+  <div class="popup popup__hide" id="create-elem">
+    <section class="popup__content">
+      <h2 class="popup__heading">Создать локацию</h2>
+      <form class="popup__form" action="#">
+        <input type="text" placeholder="Название">
+        <input type="number" placeholder="Штрихкод">
+        <input type="number" placeholder="RFID">
+        <input type="text" placeholder="Вложенность">
+        <p class="popup__toggle">
+          <label for="v-loc">Виртуальная локация</label>
+        </p>
+        <p class="popup__toggle">
+          <label for="l-loc">Локация для утерь</label>
+        </p>
+        <p class="popup__btn-wrapper">
+          <button class="create__create-btn btn-large">
+            <img src="./icons/save.svg" alt="">
+            Создать
+          </button>
+          <button class="create__cancel-btn btn-large btn-large--cancel cancel-btn">
+            Отменить
+          </button>
+        </p>
+      </form>
+    </section>
+  </div>
+
+  <div class="popup popup__hide" id="edit-elem">
+    <section class="popup__content">
+      <h2 class="popup__heading">Изменить локацию %название%</h2>
+      <form class="popup__form" action="#">
+        <input type="text" value="Локация 11">
+        <input type="number" value="1123123123123">
+        <input type="number" value="1123123123123">
+        <input type="text" value="Локация1">
+        <p class="popup__toggle">
+          <label for="v-loc">Виртуальная локация</label>
+        </p>
+        <p class="popup__toggle">
+          <label for="l-loc">Локация для утерь</label>
+        </p>
+        <p class="popup__btn-wrapper">
+          <button class="edit__delete-btn btn-large btn-large--cancel">
+            <img src="./icons/delete.svg" alt="">
+            Удалить
+          </button>
+          <button class="edit__cancel-btn btn-large btn-large--cancel cancel-btn">
+            Отменить
+          </button>
+        </p>
+        <button class="edit__save-btn btn-large">
+          <img src="./icons/save.svg" alt="">
+          Сохранить
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <script src="./script.js"></script>
+
 </body>
 </html>

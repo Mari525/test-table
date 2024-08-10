@@ -1,0 +1,102 @@
+.settings {
+  margin-bottom: 150px;
+}
+.settings .btns .btn-small {
+  width: 132px;
+  margin-bottom: 32px;
+}
+.settings .btns .btn-small-1 {
+  width: 140px;
+}
+.settings .btns .btn-small-2 {
+  width: 178px;
+}
+.settings .btns .btn-small-3 {
+  width: 160px;
+}
+.settings__footer {
+  padding: 15px 30px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.table__thead td {
+  padding-bottom: 20px;
+}
+.table__names {
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+}
+.table__row:nth-of-type(2n-1) {
+  background-color: #ffffff;
+}
+.table__row p:nth-of-type(3) {
+  width: 81px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #EFEFEF;
+}
+.table__row td {
+  height: 60px;
+  padding: 19px 0 24px;
+  vertical-align: middle;
+}
+.table__flex {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 2px solid #FF6600;
+}
+.checkbox:checked + label::before {
+  background-color: #FF6600;
+  background-image: url(../icons/check-mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.add-btn {
+  width: 255px;
+  gap: 10px;
+}
+
+.save-btn {
+  width: 198px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.cancel-btn {
+  width: 194px;
+  margin-right: auto;
+}/*# sourceMappingURL=settings.css.map */

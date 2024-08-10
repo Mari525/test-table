@@ -1,0 +1,97 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$font-form: "Galdeano", Arial, Helvetica, sans-serif;
+
+.popup {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  &__hide {
+    display: none;
+  }
+
+  &__show {
+    @include flex-center;
+  }
+
+  &__content {
+    width: 440px;
+    padding: 25px 40px;
+    background-color: #ffffff;
+  }
+
+  &__heading {
+    margin-bottom: 17px;
+    color: #000000;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  input {
+    height: 50px;
+    padding: 0 25px;
+
+    border-radius: 5px;
+    color: #172139;
+    font-size: 1.6rem;
+    font-family: $font-form;
+    background-color: #F5F5F5;
+    border: 1px solid #E1E1E1;
+
+    &::placeholder {
+      color: #AEAEAE;
+      font-family: $font-form;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__toggle {
+    font-family: $font-form;
+    font-size: 1.6rem;
+  }
+  
+}
+
+.create {
+  &__create-btn {
+    width: 193px;
+    gap: 10px;
+  }
+
+  &__cancel-btn {
+    width: 151px;
+  }
+}
+
+.edit {
+  &__delete-btn {
+    width: 195px;
+  }
+
+  &__cancel-btn {
+    width: 151px;
+  }
+
+  &__save-btn {
+    width: 100%;
+  }
+}
