@@ -68,10 +68,12 @@
 
 .edit__delete-btn {
   width: 195px;
+  gap: 10px;
 }
 .edit__cancel-btn {
   width: 151px;
 }
 .edit__save-btn {
   width: 100%;
+  gap: 10px;
 }/*# sourceMappingURL=popup.css.map */

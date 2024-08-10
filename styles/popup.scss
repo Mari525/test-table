@@ -85,6 +85,7 @@ $font-form: "Galdeano", Arial, Helvetica, sans-serif;
 .edit {
   &__delete-btn {
     width: 195px;
+    gap: 10px;
   }
 
   &__cancel-btn {
@@ -93,5 +94,6 @@ $font-form: "Galdeano", Arial, Helvetica, sans-serif;
 
   &__save-btn {
     width: 100%;
-  }
+    gap: 10px;
+  } 
 }
