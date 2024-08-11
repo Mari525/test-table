@@ -29,6 +29,11 @@
   flex-direction: column;
   gap: 17px;
 }
+.popup__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
 .popup input {
   height: 50px;
   padding: 0 25px;
@@ -48,6 +53,10 @@
   color: #AEAEAE;
   font-family: "Galdeano", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
+}
+.popup__label {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
 }
 .popup__btn-wrapper {
   display: flex;

@@ -228,10 +228,22 @@
     <section class="popup__content">
       <h2 class="popup__heading">Изменить локацию %название%</h2>
       <form class="popup__form" action="#">
-        <input type="text" value="Локация 11">
-        <input type="number" value="1123123123123">
-        <input type="number" value="1123123123123">
-        <input type="text" value="Локация1">
+        <p class="popup__wrapper">
+          <label class="popup__label" for="loc-name">Название</label>
+          <input type="text" value="Локация 11" name="loc-name">
+        </p>
+        <p class="popup__wrapper">
+          <label class="popup__label" for="code">Штрихкод</label>
+          <input type="number" value="1123123123123" name="code">
+        </p>
+        <p class="popup__wrapper">
+          <label class="popup__label" for="rfid">RFID</label>
+          <input type="number" value="1123123123123" name="rfid">
+        </p>
+        <p class="popup__wrapper">
+          <label class="popup__label" for="nesting">Вложенность</label>
+          <input type="text" value="Локация1" name="nesting">
+        </p>
         <p class="popup__toggle">
           Виртуальная локация
           <label class="toggle">

@@ -42,6 +42,12 @@ $color-accent: #FF6600;
     gap: 17px;
   }
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
   input {
     height: 50px;
     padding: 0 25px;
@@ -58,6 +64,11 @@ $color-accent: #FF6600;
       font-family: $font-form;
       font-size: 1.6rem;
     }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
   }
 
   &__btn-wrapper {
