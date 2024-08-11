@@ -1,11 +1,4 @@
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-$font-form: "Galdeano", Arial, Helvetica, sans-serif;
-$color-accent: #FF6600;
+@import "./assets/variables.scss";
 
 .popup {
   position: absolute;

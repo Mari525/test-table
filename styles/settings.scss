@@ -1,18 +1,4 @@
-$color-primary: #172139;
-$color-accent: #FF6600;
-
-$button-light: #ffffff;
-
-$bg-accent: #f4f4f4;
-
-$font-primary: "Futura PT", Arial, Helvetica, sans-serif;
-$font-secondary: "Montserrat", Arial, Helvetica, sans-serif;
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "./assets/variables.scss";
 
 .settings {
   margin-bottom: 150px;
