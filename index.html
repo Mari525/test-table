@@ -198,10 +198,18 @@
         <input type="number" placeholder="RFID">
         <input type="text" placeholder="Вложенность">
         <p class="popup__toggle">
-          <label for="v-loc">Виртуальная локация</label>
+          Виртуальная локация
+          <label class="toggle">
+            <input type="checkbox" class="toggle__checkbox" checked>
+            <span class="toggle__slider"></span>
+          </label>
         </p>
         <p class="popup__toggle">
-          <label for="l-loc">Локация для утерь</label>
+          Локация для утерь
+          <label class="toggle">
+            <input type="checkbox" class="toggle__checkbox" checked>
+            <span class="toggle__slider"></span>
+          </label>
         </p>
         <p class="popup__btn-wrapper">
           <button class="create__create-btn btn-large">
@@ -224,12 +232,14 @@
         <input type="number" value="1123123123123">
         <input type="number" value="1123123123123">
         <input type="text" value="Локация1">
-        <p class="popup__toggle">
+        <!-- <p class="toggle">
           <label for="v-loc">Виртуальная локация</label>
-        </p>
-        <p class="popup__toggle">
-          <label for="l-loc">Локация для утерь</label>
-        </p>
+        </p> -->
+        <!-- <p class="toggle">
+          <label for="l-loc">
+
+          </label>
+        </p> -->
         <p class="popup__btn-wrapper">
           <button class="edit__delete-btn btn-large btn-large--cancel">
             <img src="./icons/delete.svg" alt="">

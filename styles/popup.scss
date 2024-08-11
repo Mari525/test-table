@@ -5,6 +5,7 @@
 }
 
 $font-form: "Galdeano", Arial, Helvetica, sans-serif;
+$color-accent: #FF6600;
 
 .popup {
   position: absolute;
@@ -67,8 +68,51 @@ $font-form: "Galdeano", Arial, Helvetica, sans-serif;
   &__toggle {
     font-family: $font-form;
     font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+
+  &__checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .toggle__slider::before {
+      transform: translateX(24px);
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EFEFEF;
+    transition: 0.4s;
+    border-radius: 53px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 2px;
+      bottom: 2px;
+      background-color: $color-accent;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
 }
 
 .create {
