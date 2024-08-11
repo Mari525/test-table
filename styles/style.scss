@@ -64,6 +64,10 @@ ul {
   letter-spacing: 0.1em;
   border-radius: 5px;
 
+  &:hover {
+    background-color: $color-accent;
+  }
+
   &--cancel {
     color: $color-primary;
     background-color: $button-light;

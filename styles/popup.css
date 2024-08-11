@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT Book"), local("FuturaPT-Book"), url("../fonts/futura-pt/FuturaPT-Book.woff2") format("woff2"), url("../fonts/futura-pt/FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT Medium"), local("FuturaPT-Medium"), url("../fonts/futura-pt/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/futura-pt/FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT Demi"), local("FuturaPT-Demi"), url("../fonts/futura-pt/FuturaPT-Demi.woff2") format("woff2"), url("../fonts/futura-pt/FuturaPT-Demi.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: local("Futura PT Heavy"), local("FuturaPT-Heavy"), url("../fonts/futura-pt/FuturaPT-Heavy.woff2") format("woff2"), url("../fonts/futura-pt/FuturaPT-Heavy.woff") format("woff");
+  font-weight: 900;
+}
 .popup {
   position: absolute;
   height: 100%;
@@ -34,7 +54,7 @@
   flex-direction: column;
   gap: 7px;
 }
-.popup input {
+.popup input, .popup__select {
   height: 50px;
   padding: 0 25px;
   border-radius: 5px;
@@ -44,19 +64,32 @@
   background-color: #F5F5F5;
   border: 1px solid #E1E1E1;
 }
-.popup input::-moz-placeholder {
+.popup input::-moz-placeholder, .popup__select::-moz-placeholder {
   color: #AEAEAE;
   font-family: "Galdeano", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
 }
-.popup input::placeholder {
+.popup input::placeholder, .popup__select::placeholder {
   color: #AEAEAE;
   font-family: "Galdeano", Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
+}
+.popup input:focus, .popup__select:focus {
+  outline: none;
+  border: 1px solid #FF6600;
 }
 .popup__label {
   font-size: 1.6rem;
   line-height: 1.8rem;
+}
+.popup__select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 25px center;
 }
 .popup__btn-wrapper {
   display: flex;
@@ -72,7 +105,6 @@
 
 .toggle {
   position: relative;
-  display: inline-block;
   width: 52px;
   height: 28px;
 }

@@ -196,7 +196,11 @@
         <input type="text" placeholder="Название">
         <input type="number" placeholder="Штрихкод">
         <input type="number" placeholder="RFID">
-        <input type="text" placeholder="Вложенность">
+        <select name="nesting" id="nesting" class="popup__select">
+          <option value="1">Локация1</option>
+          <option value="2">Локация2</option>
+          <option value="3">Локация3</option> 
+        </select>
         <p class="popup__toggle">
           Виртуальная локация
           <label class="toggle">
@@ -230,19 +234,24 @@
       <form class="popup__form" action="#">
         <p class="popup__wrapper">
           <label class="popup__label" for="loc-name">Название</label>
-          <input type="text" value="Локация 11" name="loc-name">
+          <input type="text" value="Локация 11" name="loc-name" id="loc-name">
         </p>
         <p class="popup__wrapper">
           <label class="popup__label" for="code">Штрихкод</label>
-          <input type="number" value="1123123123123" name="code">
+          <input type="number" value="1123123123123" name="code" id="code">
         </p>
         <p class="popup__wrapper">
           <label class="popup__label" for="rfid">RFID</label>
-          <input type="number" value="1123123123123" name="rfid">
+          <input type="number" value="1123123123123" name="rfid" id="rfid">
         </p>
         <p class="popup__wrapper">
           <label class="popup__label" for="nesting">Вложенность</label>
-          <input type="text" value="Локация1" name="nesting">
+          <!-- <input type="text" value="Локация1" name="nesting" id="nesting"> -->
+          <select name="nesting" id="nesting" class="popup__select">
+            <option value="1">Локация1</option>
+            <option value="2">Локация2</option>
+            <option value="3">Локация3</option> 
+          </select>
         </p>
         <p class="popup__toggle">
           Виртуальная локация

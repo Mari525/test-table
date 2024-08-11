@@ -41,7 +41,8 @@
     gap: 7px;
   }
 
-  input {
+  input,
+  &__select {
     height: 50px;
     padding: 0 25px;
 
@@ -57,11 +58,25 @@
       font-family: $font-form;
       font-size: 1.6rem;
     }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $color-accent;
+    }
   }
 
   &__label {
     font-size: 1.6rem;
     line-height: 1.8rem;
+  }
+
+  &__select {
+    cursor: pointer;
+    appearance: none;
+
+    background-image: url('../icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 25px center;
   }
 
   &__btn-wrapper {
@@ -80,7 +95,6 @@
 
 .toggle {
   position: relative;
-  display: inline-block;
   width: 52px;
   height: 28px;
 

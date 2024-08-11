@@ -82,6 +82,9 @@ ul {
   letter-spacing: 0.1em;
   border-radius: 5px;
 }
+.btn-large:hover {
+  background-color: #FF6600;
+}
 .btn-large--cancel {
   color: #172139;
   background-color: #ffffff;
